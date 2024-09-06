@@ -1,22 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- github -->
- <remote name="TMN"
-	 fetch="https://github.com/TMN2543" />
+ <!-- Remotes -->
+   <remote name="mayuresh"
+           fetch="https://github.com/TMN2543"
+           clone-depth="1" />
+   <remote name="kami"
+           fetch="https://github.com/kamikaonashi"
+           clone-depth="1" />
+   <remote name="cr"
+           fetch="https://github.com/crdroidandroid"
+           clone-depth="1" />
+   <remote name="linag"
+           fetch="https://github.com/LineageOS"
+           clone-depth="1" />
+   <remote name="cumos"
+           fetch="https://github.com/cumOS"
+	   clone-depth="1" />
+   <remote name="tf"
+           fetch="https://github.com/TogoFire"
+	   clone-depth="1" />
+   <remote name="ckm"
+           fetch="https://github.com/Chaitanyakm"
+	   clone-depth="1" />
 
- <!-- gitlab -->
- <remote name="TMN_gitlab" 
-         fetch="https://gitlab.com" />
+ 
+ <!-- Tree -->
+ <project path="device/xiaomi/stone" name="device_xiaomi_stone" remote="vedu" revision="14" />
 
- <!-- TMN2543 -->
- <project path="device/xiaomi/sweet" name="TMN2543/device_xiaomi_sweet" remote="TMN_github" revision="lineage-20" clone-depth="1" />
- <project path="vendor/xiaomi/sweet" name="TMN2543/vendor_xiaomi_sweet" remote="TMN_github" revision="lineage-20" clone-depth="1" />
- <project path="device/xiaomi/sm6150-common" name="TMN2543/device_xiaomi_sm6150-common" remote="TMN_github" revision="lineage-20" clone-depth="1" />
+ <!-- Kernel -->
+ <project path="device/xiaomi/stone-kernel" name="device_xiaomi_stone-kernel" remote="kami" revision="14" />
+
+ <!-- Kernel Headers -->
+ <project path="kernel/xiaomi/sm6375" name="android_kernel_qcom_sm8350" remote="cr" revision="14.0" />
  
+ <!-- Vendor -->
+ <project path="vendor/xiaomi/stone" name="vendor_xiaomi_stone" remote="kami" revision="14" />
  
- <!-- kernel -->
- <project path="kernel/xiaomi/sm6150-1" name="vantoman/kernel_xiaomi_sm6150:13" remote="TMN_github" revision="master" clone-depth="1" />
+ <!-- Common Xiaomi Hardware Tree -->
+ <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="linag" revision="lineage-21" />
+
+ <!-- Dolby -->
+ <project path="vendor/dolby" name="vendor_dolby_oplus" remote="cumos" revision="14" />
+
+ <!-- V4AFX -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="tf" revision="v4a" />
  
- <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="dib_gitlab" revision="master" clone-depth="1" />
+ <!-- BCR -->
+ <project path="vendor/bcr" name="vendor_bcr" remote="ckm" revision="main" />
+  <!-- Kanged from Vedraj🫠 -->
+	
+</manifest>
