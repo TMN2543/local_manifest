@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Remotes -->
+   <remote name="mayuresh"
+           fetch="https://github.com/TMN2543"
+           clone-depth="1" />
+   <remote name="kami"
+           fetch="https://github.com/kamikaonashi"
+           clone-depth="1" />
+   <remote name="cr"
+           fetch="https://github.com/crdroidandroid"
+           clone-depth="1" />
+   <remote name="linag"
+           fetch="https://github.com/LineageOS"
+           clone-depth="1" />
+   <remote name="cumos"
+           fetch="https://github.com/cumOS"
+	   clone-depth="1" />
+   <remote name="jabiyeff"
+           fetch="https://github.com/Jabiyeff"
+	   clone-depth="1" />
+
+ 
+ <!-- Tree -->
+ <project path="device/xiaomi/spes" name="android_device_xiaomi_spes" remote="mayuresh" revision="14" />
+
+ <!-- Kernel -->
+ <project path="kernel/xiaomi/spes" name="kernel_xiaomi_sm6225" remote="jabiyeff" revision="CAF-4.19" />
+
+ <!-- Vendor -->
+ <project path="vendor/xiaomi/spes" name="android_vendor_xiaomi_spes" remote="mayuresh" revision="14" />
+ 
+ <!-- Common Xiaomi Hardware Tree -->
+ <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="linag" revision="lineage-21" />
+
+ <!-- Dolby -->
+ <project path="vendor/dolby" name="vendor_dolby_oplus" remote="cumos" revision="14" />
+
+ <!-- Kanged from Vedraj🫠 -->
+	
+</manifest>
